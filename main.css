@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 5px;
+}
+
+header {
+    display: flex;
+}
+
+.logo{
+    height: 80px;
+    width: 10%;
+    background-color: red;
+    background-clip: content-box;
+    padding: 5px;
+}
+
+.logo2 {
+    height: 80px;
+    width: 90%;
+    background-color: gray;
+    background-clip: content-box;
+    padding: 5px;
+}
+
+.tagline {
+    height: 80px;
+    width: 100%;
+    background-color: gray;
+    background-clip: content-box;
+    padding: 5px;
+}
+
+.velika {
+    height: 450px;
+    background-clip: content-box;
+    padding: 5px;
+    justify-content: flex-end;
+    background-image: url(/img/photo.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+.text {
+    
+    width: 20%;
+    padding-right: 70px;
+
+}
+
+a {
+    border: 1px solid white;
+    padding: 10px 15px;
+    display: inline-block;
+    margin-top: 10px;
+    cursor: grab;
+
+}
+
+a:hover {
+    background-color: orange;
+    color: white;
+    border: 1px solid orangered;
+    
+}
+
+h1 {
+    font-size: 60px;    
+    color: brown;
+}
+
+p {
+    color: red;
+
+}
+
+.druga {
+    display: flex;
+
+}
+
+.kockice {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 50%;
+    height: 300px;
+    background-color: pink;
+    background-clip: content-box;
+    padding: 5px;   
+}
+
+.kocka {
+    height: 600px;
+    width: 50%;
+    background-image: url(/img/photo2.jpg);
+    background-clip: content-box;
+    padding: 5px;   
+    background-size: cover;
+
+
+}
+
+.treca {
+    display: flex;
+}
+
+.cetvrta {
+    display: flex;
+}
+
+.big-box {
+    width: 50%;
+    height: 600px;
+    background-color: blue;
+    background-clip: content-box;
+    padding: 5px;   
+
+}
+
+.levo, .desno {
+    flex-wrap: wrap;
+    display: flex;
+    width: 25%;
+}
+
+.levo>.box, .desno>.box {
+    width: 100%
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: gray;
+    background-clip: content-box;
+    padding: 5px; 
+}
+
+.overlay {
+    clip-path: polygon(0 64%, 100% 18%, 100% 100%, 0% 100%);
+    background-color: #ed143d54;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.overlay p {
+    position: absolute;
+    bottom: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: right;  
+    padding-right: 40px;
+    color: yellow;
+}
+
+
+@media screen and  (min-width: 480px)and (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .text p {
+        font-size: 15px;
+    }
+
+    .velika {
+        justify-content: center;
+    }
+
+    a {
+        border: 1px solid white;
+        padding: 5px 7px;
+        display: inline-block;
+        margin-top: 10px;
+        cursor: grab;
+        font-size: 12px;
+    
+    }
+
+    .overlay p {
+        font-size: 15px;
+        bottom: 0px;
+        padding: 0;
+    }
+
+    .box {
+        height: 100px;
+    }
+
+    .big-box {
+        height: 200px;
+    }
+
+    .kocka {
+        height: 200px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .velika {
+        justify-content: center;
+        /* display: none; */
+    }
+
+    .overlay p {
+        font-size: 15px;
+        bottom: 0px;
+        padding: 0;
+    }
+
+    a {
+        border: 1px solid white;
+        padding: 5px 7px;
+        display: inline-block;
+        margin-top: 10px;
+        cursor: grab;
+        font-size: 12px;
+    
+    }
+
+    .box {
+        height: 100px;
+    }
+
+    .big-box {
+        height: 200px;
+    }
+
+    .kocka {
+        height: 200px;
+    }
+}
