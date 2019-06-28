@@ -41,7 +41,7 @@ header {
     background-clip: content-box;
     padding: 5px;
     justify-content: flex-end;
-    background-image: url(/img/photo.jpg);
+    background-image: url(./img/photo.jpg);
     background-size: cover;
     display: flex;
     align-items: center;
@@ -105,7 +105,7 @@ p {
 .kocka {
     height: 600px;
     width: 50%;
-    background-image: url(/img/photo2.jpg);
+    background-image: url(./img/photo2.jpg);
     background-clip: content-box;
     padding: 5px;   
     background-size: cover;
